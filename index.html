@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promoción de Salud</title>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Promoción de Salud</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Inicio</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#consejos">Consejos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Aprende sobre salud y bienestar</h2>
+                <p>Descubre información valiosa para mejorar tu calidad de vida y promover hábitos saludables en tu día a día.</p>
+                <a href="#temas" class="btn">Explorar temas</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="carousel-section">
+        <div class="container">
+            <h2 class="section-title">Galería de Salud</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item active">
+                        <img src="imagen/alimentos-saludables.jpg" alt="Alimentación saludable">
+                        <div class="carousel-caption">
+                            <h3>Alimentación Saludable</h3>
+                            <p>Una dieta equilibrada es fundamental para mantener una buena salud.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/salud_fisica.jpg" alt="Actividad física">
+                        <div class="carousel-caption">
+                            <h3>Actividad Física</h3>
+                            <p>El ejercicio regular fortalece el cuerpo y mejora el estado de ánimo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/salud-mental.jpg" alt="Salud mental">
+                        <div class="carousel-caption">
+                            <h3>Salud Mental</h3>
+                            <p>Cuidar de tu mente es tan importante como cuidar de tu cuerpo.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/prevenir_enfermedades.jpg" alt="Prevención de enfermedades">
+                        <div class="carousel-caption">
+                            <h3>Prevención</h3>
+                            <p>La prevención es la mejor estrategia para mantener una buena salud.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/sueño_reparador.jpg" alt="Prevención de enfermedades">
+                        <div class="carousel-caption">
+                            <h3>Sueño Reparador</h3>
+                            <p>Dormir bien es clave para recargar energía y mejorar tu salud física y mental.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/Hidratacion.jpg" alt="Prevención de enfermedades">
+                        <div class="carousel-caption">
+                            <h3>Hidratación</h3>
+                            <p>Beber agua suficiente optimiza el funcionamiento de tu cuerpo, desde la piel hasta el cerebro.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/ssssssss.jpg" alt="Prevención de enfermedades">
+                        <div class="carousel-caption">
+                            <h3>Salud Comunitaria</h3>
+                            <p>Cuidar de los demás y fomentar conexiones sociales fortalece no solo tu bienestar, sino el de toda la comunidad.</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="imagen/bienestar_digital.jpg" alt="Prevención de enfermedades">
+                        <div class="carousel-caption">
+                            <h3>Bienestar Digital</h3>
+                            <p>Usar la tecnología con equilibrio reduce el estrés y mejora tu productividad; aprende a desconectarte para reconectar contigo mismo.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control prev" aria-label="Anterior">&#10094;</button>
+                <button class="carousel-control next" aria-label="Siguiente">&#10095;</button>
+                <div class="carousel-indicators">
+                    <span class="indicator active" data-index="0"></span>
+                    <span class="indicator" data-index="1"></span>
+                    <span class="indicator" data-index="2"></span>
+                    <span class="indicator" data-index="3"></span>
+                    <span class="indicator" data-index="4"></span>
+                    <span class="indicator" data-index="5"></span>
+                    <span class="indicator" data-index="6"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="temas" class="topics">
+        <div class="container">
+            <h2 class="section-title">Temas de Salud</h2>
+            <div class="tabs-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="nutricion">Nutrición</button>
+                    <button class="tab-btn" data-tab="ejercicio">Ejercicio</button>
+                    <button class="tab-btn" data-tab="mental">Salud Mental</button>
+                    <button class="tab-btn" data-tab="prevencion">Prevención</button>
+                    <button class="tab-btn" data-tab="descanso">Descanso</button>
+                </div>
+                
+                <div class="tab-content">
+                    <div class="tab-pane active" id="nutricion">
+                        <h3>Nutrición Saludable</h3>
+                        <div class="tab-flex">
+                            <div class="tab-text">
+                                <p>Una alimentación equilibrada es la base de una buena salud. Incluye diariamente:</p>
+                                <ul>
+                                    <li>Frutas y verduras frescas (5 porciones diarias)</li>
+                                    <li>Proteínas magras como pescado, pollo o legumbres</li>
+                                    <li>Granos enteros y cereales integrales</li>
+                                    <li>Lácteos bajos en grasa o alternativas vegetales</li>
+                                    <li>Grasas saludables como aceite de oliva, aguacate y frutos secos</li>
+                                </ul>
+                                <p>Limita el consumo de azúcares añadidos, grasas saturadas y alimentos ultraprocesados.</p>
+                                <a href="nutricion.html" class="btn-small">Ver más detalles</a>
+                            </div>
+                            <div class="tab-image">
+                                <img src="imagen/nutricion.jpg" alt="Nutrición saludable">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="ejercicio">
+                        <h3>Ejercicio Físico</h3>
+                        <div class="tab-flex">
+                            <div class="tab-text">
+                                <p>La actividad física regular es esencial para mantener un cuerpo sano. Recomendaciones:</p>
+                                <ul>
+                                    <li>Al menos 150 minutos de actividad moderada a la semana</li>
+                                    <li>Ejercicios de fuerza 2-3 veces por semana</li>
+                                    <li>Estiramientos para mantener la flexibilidad</li>
+                                    <li>Actividades aeróbicas como caminar, nadar o andar en bicicleta</li>
+                                    <li>Reducir el tiempo sedentario, levantándose cada 30 minutos</li>
+                                </ul>
+                                <p>Encuentra actividades que disfrutes para mantener la constancia.</p>
+                                <a href="ejercicio.html" class="btn-small">Ver más detalles</a>
+                            </div>
+                            <div class="tab-image">
+                                <img src="imagen/ejercicio.jpg" alt="Ejercicio físico">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="mental">
+                        <h3>Salud Mental</h3>
+                        <div class="tab-flex">
+                            <div class="tab-text">
+                                <p>Cuidar de tu mente es tan importante como cuidar de tu cuerpo. Recomendaciones:</p>
+                                <ul>
+                                    <li>Practica la meditación o mindfulness diariamente</li>
+                                    <li>Mantén conexiones sociales significativas</li>
+                                    <li>Establece límites saludables en el trabajo y relaciones</li>
+                                    <li>Busca ayuda profesional cuando sea necesario</li>
+                                    <li>Dedica tiempo a actividades que disfrutes</li>
+                                </ul>
+                                <p>Recuerda que cuidar tu salud mental no es un lujo, es una necesidad.</p>
+                                <a href="mental.html" class="btn-small">Ver más detalles</a>
+                            </div>
+                            <div class="tab-image">
+                                <img src="imagen/mental.jpg" alt="Salud mental">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="prevencion">
+                        <h3>Prevención de Enfermedades</h3>
+                        <div class="tab-flex">
+                            <div class="tab-text">
+                                <p>La prevención es la mejor estrategia para mantener una buena salud. Recomendaciones:</p>
+                                <ul>
+                                    <li>Realiza chequeos médicos regulares</li>
+                                    <li>Mantén al día tu calendario de vacunación</li>
+                                    <li>Lávate las manos frecuentemente</li>
+                                    <li>Evita el tabaco y limita el consumo de alcohol</li>
+                                    <li>Protege tu piel del sol con protector solar</li>
+                                </ul>
+                                <p>Detectar problemas de salud temprano aumenta las posibilidades de tratamiento exitoso.</p>
+                                <a href="prevencion.html" class="btn-small">Ver más detalles</a>
+                            </div>
+                            <div class="tab-image">
+                                <img src="imagen/prevencion.jpg" alt="Prevención de enfermedades">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-pane" id="descanso">
+                        <h3>Descanso y Sueño</h3>
+                        <div class="tab-flex">
+                            <div class="tab-text">
+                                <p>Un buen descanso es fundamental para la recuperación física y mental. Recomendaciones:</p>
+                                <ul>
+                                    <li>Duerme entre 7-9 horas diarias</li>
+                                    <li>Mantén un horario regular de sueño</li>
+                                    <li>Crea un ambiente propicio para dormir: oscuro, fresco y silencioso</li>
+                                    <li>Evita pantallas al menos una hora antes de acostarte</li>
+                                    <li>Limita la cafeína y el alcohol, especialmente por la tarde</li>
+                                </ul>
+                                <p>El sueño de calidad mejora tu sistema inmunológico, memoria y estado de ánimo.</p>
+                                <a href="descanso.html" class="btn-small">Ver más detalles</a>
+                            </div>
+                            <div class="tab-image">
+                                <img src="imagen/descanso.jpg" alt="Descanso y sueño">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="consejos" class="health-tips">
+        <div class="container">
+            <h2 class="section-title">Consejos para Cuidar tu Salud</h2>
+            <div class="tips-container">
+                <div class="tip-card">
+                    <div class="tip-icon">💧</div>
+                    <h3>Hidratación</h3>
+                    <p>Bebe al menos 2 litros de agua al día. La hidratación adecuada mejora la digestión, la circulación y la salud de la piel. Lleva siempre una botella de agua contigo y establece recordatorios si te cuesta mantener el hábito.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🥗</div>
+                    <h3>Alimentación Consciente</h3>
+                    <p>Come despacio y sin distracciones. Presta atención a los sabores, texturas y señales de saciedad. Evita comer por estrés o aburrimiento. Planifica tus comidas con anticipación para evitar opciones poco saludables.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🚶</div>
+                    <h3>Movimiento Diario</h3>
+                    <p>Incorpora movimiento a tu rutina diaria. Usa las escaleras en lugar del ascensor, camina durante las llamadas telefónicas o haz estiramientos mientras ves televisión. Pequeños cambios suman grandes beneficios.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🧘</div>
+                    <h3>Pausa Consciente</h3>
+                    <p>Toma 5 minutos varias veces al día para respirar profundamente. Esta práctica reduce el estrés, mejora la concentración y ayuda a mantener la calma en situaciones difíciles. La respiración es tu ancla al momento presente.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">🌳</div>
+                    <h3>Contacto con la Naturaleza</h3>
+                    <p>Pasa tiempo al aire libre regularmente. El contacto con la naturaleza reduce el estrés, mejora el estado de ánimo y fortalece el sistema inmunológico. Incluso 20 minutos en un parque pueden tener efectos positivos.</p>
+                </div>
+                <div class="tip-card">
+                    <div class="tip-icon">😴</div>
+                    <h3>Rutina de Sueño</h3>
+                    <p>Establece una rutina relajante antes de dormir. Apaga dispositivos electrónicos, lee un libro, toma un baño tibio o practica estiramientos suaves. Preparar al cuerpo para el descanso mejora la calidad del sueño.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habitos" class="healthy-habits">
+        <div class="container">
+            <h2 class="section-title">Hábitos Saludables Diarios</h2>
+            <div class="habits-timeline">
+                <div class="habit-item">
+                    <div class="habit-time">7:00 AM</div>
+                    <div class="habit-content">
+                        <h3>Despertar e Hidratarse</h3>
+                        <p>Comienza tu día con un vaso de agua para rehidratar tu cuerpo después de la noche. Añade limón para un impulso de vitamina C y ayudar a la digestión.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">7:30 AM</div>
+                    <div class="habit-content">
+                        <h3>Movimiento Matutino</h3>
+                        <p>Dedica 10-15 minutos a estiramientos suaves, yoga o una caminata corta para activar tu cuerpo y mente. El ejercicio matutino mejora el estado de ánimo y aumenta la energía.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">8:00 AM</div>
+                    <div class="habit-content">
+                        <h3>Desayuno Nutritivo</h3>
+                        <p>Incluye proteínas, fibra y grasas saludables en tu desayuno. Un ejemplo: avena con frutas, nueces y yogur. Un desayuno equilibrado estabiliza los niveles de azúcar en sangre.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">10:30 AM</div>
+                    <div class="habit-content">
+                        <h3>Pausa Activa</h3>
+                        <p>Si trabajas sentado, levántate cada hora para estirar y mover tu cuerpo durante 5 minutos. Esto mejora la circulación y reduce la tensión muscular.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">1:00 PM</div>
+                    <div class="habit-content">
+                        <h3>Almuerzo Consciente</h3>
+                        <p>Come sin distracciones, masticando lentamente. Un plato ideal incluye 50% vegetales, 25% proteínas y 25% carbohidratos complejos.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">3:00 PM</div>
+                    <div class="habit-content">
+                        <h3>Merienda Saludable</h3>
+                        <p>Opta por frutas, frutos secos o yogur para mantener la energía sin caídas de azúcar. Evita alimentos procesados y bebidas azucaradas.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">6:00 PM</div>
+                    <div class="habit-content">
+                        <h3>Actividad Física</h3>
+                        <p>Dedica 30-45 minutos a ejercicio moderado como caminar, nadar, andar en bicicleta o bailar. La consistencia es más importante que la intensidad.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">7:30 PM</div>
+                    <div class="habit-content">
+                        <h3>Cena Ligera</h3>
+                        <p>Cena al menos 2-3 horas antes de acostarte. Opta por proteínas magras y vegetales, reduciendo carbohidratos y grasas para facilitar la digestión nocturna.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">9:00 PM</div>
+                    <div class="habit-content">
+                        <h3>Rutina de Relajación</h3>
+                        <p>Apaga dispositivos electrónicos y dedica tiempo a actividades relajantes como leer, meditar o tomar un baño tibio para preparar el cuerpo para el descanso.</p>
+                    </div>
+                </div>
+                <div class="habit-item">
+                    <div class="habit-time">10:00 PM</div>
+                    <div class="habit-content">
+                        <h3>Descanso Reparador</h3>
+                        <p>Duerme en un ambiente oscuro, fresco y silencioso. Mantén un horario regular de sueño, incluso los fines de semana, para optimizar los ciclos de descanso.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="recursos" class="resources">
+        <div class="container">
+            <h2 class="section-title">Recursos Educativos</h2>
+            <div class="resources-container">
+                <div class="resource-item">
+                    <div class="resource-icon">📝</div>
+                    <h3>Artículos</h3>
+                    <p>Artículos informativos sobre diversos temas de salud escritos por profesionales médicos y especialistas.</p>
+                    <a href="articulos.html" class="btn-small">Ver artículos</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">🎬</div>
+                    <h3>Videos</h3>
+                    <p>Tutoriales, charlas y demostraciones sobre promoción de la salud, ejercicios prácticos y técnicas de relajación para implementar en casa.</p>
+                    <a href="videos.html" class="btn-small">Ver videos</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">📚</div>
+                    <h3>Guías</h3>
+                    <p>Guías prácticas descargables para implementar hábitos saludables en tu vida diaria, con planes de alimentación, rutinas de ejercicio y más.</p>
+                    <a href="guias.html" class="btn-small">Descargar guías</a>
+                </div>
+                <div class="resource-item">
+                    <div class="resource-icon">📱</div>
+                    <h3>Aplicaciones</h3>
+                    <p>Recomendaciones de aplicaciones móviles para seguimiento de hábitos saludables, meditación, ejercicio y nutrición balanceada.</p>
+                    <a href="faq.html" class="btn-small">Ver recomendaciones</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contacto</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Información de Contacto</h3>
+                    <p><strong>Correo:</strong> sujaiarteaga404@gmail.com</p>
+                    <p><strong>Teléfono:</strong> 55540684</p>
+                    <p><strong>Dirección:</strong> UCI, La Habana</p>
+                   <div class="social-links">
+    <a href="https://facebook.com/tu-pagina" target="_blank" aria-label="Facebook" class="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="20" height="20" fill="currentColor">
+            <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+        </svg>
+    </a>
+    <a href="https://twitter.com/tu-usuario" target="_blank" aria-label="Twitter" class="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="20" height="20" fill="currentColor">
+            <path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/>
+        </svg>
+    </a>
+    <a href="https://instagram.com/tu-usuario" target="_blank" aria-label="Instagram" class="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20" height="20" fill="currentColor">
+            <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+        </svg>
+    </a>
+    <a href="https://youtube.com/c/tu-canal" target="_blank" aria-label="YouTube" class="social-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20" height="20" fill="currentColor">
+            <path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/>
+        </svg>
+    </a>
+</div>
+                </div>
+               <div class="contact-form">
+    <h3>Envíanos un Mensaje</h3>
+    <form id="contact-form">
+        <div class="form-group">
+            <label for="name">Nombre</label>
+            <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="contact-email">Correo Electrónico</label>
+            <input type="email" id="contact-email" name="email" placeholder="example@gmail.com" required>
+        </div>
+        <div class="form-group">
+            <label for="message">Mensaje</label>
+            <textarea id="message" name="message" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+        </div>
+        <button type="submit" class="btn">Enviar Mensaje</button>
+    </form>
+    <div id="contact-message"></div>
+</div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Promoción de Salud</h2>
+                    <p>Educación para una vida saludable</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#temas">Temas</a></li>
+                        <li><a href="#consejos">Consejos</a></li>
+                        <li><a href="#recursos">Recursos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="articulos.html">Artículos</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="guias.html">Guías</a></li>
+                        <li><a href="faq.html">Aplicaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Promoción de Salud. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicaciones de Salud - Promoción de Salud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos para la sección de aplicaciones */
+        .apps-section {
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .apps-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .apps-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .app-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 0 auto;
+        }
+        
+        .app-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .app-icon {
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+            background-color: #f1f1f1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .app-icon img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            transition: transform 0.5s ease;
+        }
+        
+        .app-item:hover .app-icon img {
+            transform: scale(1.1);
+        }
+        
+        .app-info {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .app-info h3 {
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #2c3e50;
+            font-size: 1.3rem;
+        }
+        
+        .app-platform {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .platform-badge {
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .android {
+            background-color: #a4c639;
+            color: white;
+        }
+        
+        .ios {
+            background-color: #007aff;
+            color: white;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+            margin-top: 5px;
+        }
+        
+        .download-btn:hover {
+            background-color: #388E3C;
+        }
+        
+        .download-btn i {
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .apps-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .app-item {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Promoción de Salud</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#temas">Temas</a></li>
+                    <li><a href="index.html#consejos">Consejos</a></li>
+                    <li><a href="index.html#recursos" class="active">Recursos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="apps-page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Aplicaciones de Salud</h2>
+                <p>Herramientas digitales para mejorar tu bienestar y hábitos saludables</p>
+                <a href="index.html" class="btn back-btn"><i class="fas fa-arrow-left"></i> Volver a Inicio</a>
+            </div>
+
+            <!-- Sección de aplicaciones descargables -->
+            <div class="apps-section">
+                <h2>Aplicaciones Recomendadas</h2>
+                <div class="apps-container">
+                    <!-- App 1 -->
+                    <div class="app-item">
+                        <div class="app-icon">
+                            <img src="imagen/myfitnes.png" alt="Icono de MyFitnessPal">
+                        </div>
+                        <div class="app-info">
+                            <h3>MyFitnessPal</h3>
+                            <div class="app-platform">
+                                <span class="platform-badge android">Android</span>
+                                
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.myfitnesspal.android&hl=es&pli=1" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- App 2 -->
+                    <div class="app-item">
+                        <div class="app-icon">
+                            <img src="imagen/headspace-1.webp" alt="Icono de Calm">
+                        </div>
+                        <div class="app-info">
+                            <h3>Headspace</h3>
+                            <div class="app-platform">
+                                <span class="platform-badge android">Android</span>
+                              
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.getsomeheadspace.android&hl=es_US" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- App 3 -->
+                    <div class="app-item">
+                        <div class="app-icon">
+                            <img src="imagen/agua.webp" alt="Icono de Sleep Cycle">
+                        </div>
+                        <div class="app-info">
+                            <h3>Aqua Reminder</h3>
+                            <div class="app-platform">
+                                <span class="platform-badge android">Android</span>
+                               
+                            </div>
+                            <a href="https://play.google.com/store/apps/details?id=com.vgfit.waterbalance" target="_blank" class="download-btn">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Promoción de Salud</h2>
+                    <p>Educación para una vida saludable</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#temas">Temas</a></li>
+                        <li><a href="index.html#consejos">Consejos</a></li>
+                        <li><a href="index.html#recursos">Recursos</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="articulos.html">Artículos</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="guias.html">Guías</a></li>
+                        <li><a href="faq.html">Aplicaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Promoción de Salud. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guías de Salud - Promoción de Salud</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* Estilos para la sección de libros */
+        .books-section {
+            margin-top: 50px;
+            margin-bottom: 60px;
+        }
+        
+        .books-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .books-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        
+        .book-item {
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            margin: 0 auto;
+        }
+        
+        .book-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+        }
+        
+        .book-cover {
+            height: 400px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .book-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .book-item:hover .book-cover img {
+            transform: scale(1.05);
+        }
+        
+        .book-info {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .book-info h3 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #2c3e50;
+            font-size: 1.2rem;
+        }
+        
+        .download-btn {
+            display: inline-block;
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s ease;
+        }
+        
+        .download-btn:hover {
+            background-color: #388E3C;
+        }
+        
+        .download-btn i {
+            margin-right: 8px;
+        }
+        
+        @media (max-width: 768px) {
+            .books-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .book-item {
+                width: 100%;
+                max-width: 280px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Promoción de Salud</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="index.html#temas">Temas</a></li>
+                    <li><a href="index.html#consejos">Consejos</a></li>
+                    <li><a href="index.html#recursos" class="active">Recursos</a></li>
+                    <li><a href="index.html#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="guides-page">
+        <div class="container">
+            <div class="page-header">
+                <h2>Guías de Salud</h2>
+                <p>Documentos descargables con información práctica para implementar hábitos saludables</p>
+                <a href="index.html" class="btn back-btn"><i class="fas fa-arrow-left"></i> Volver a Inicio</a>
+            </div>
+            
+            <!-- Sección de libros descargables -->
+            <div class="books-section">
+                <h2>Libros Recomendados</h2>
+                <div class="books-container">
+                    <!-- Libro 1 -->
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="imagen/El_gran_libro.jpg" alt="Portada del Libro 1">
+                        </div>
+                        <div class="book-info">
+                            <h3>Nutrición y Salud</h3>
+                            <a href="libros/El Gran Libro De Los Postres Sanos_ Delicias irresistibles para la salud y el paladar (Cocina Natural) ( PDFDrive ).epub" download class="download-btn">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Libro 2 -->
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="imagen/Estiramientos.jpg" alt="Portada del Libro 2">
+                        </div>
+                        <div class="book-info">
+                            <h3>Ejercicio para la Vida</h3>
+                            <a href="libros/Estiramientos ( PDFDrive ).epub" download class="download-btn">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Libro 3 -->
+                    <div class="book-item">
+                        <div class="book-cover">
+                            <img src="imagen/Habitos.webp" alt="Portada del Libro 3">
+                        </div>
+                        <div class="book-info">
+                            <h3>Bienestar Emocional</h3>
+                            <a href="libros/Habitos_atomicos-_James_Clear.epub" download class="download-btn">
+                                <i class="fas fa-download"></i> Descargar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>Promoción de Salud</h2>
+                    <p>Educación para una vida saludable</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#temas">Temas</a></li>
+                        <li><a href="index.html#consejos">Consejos</a></li>
+                        <li><a href="index.html#recursos">Recursos</a></li>
+                        <li><a href="index.html#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h3>Recursos</h3>
+                    <ul>
+                        <li><a href="articulos.html">Artículos</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="guias.html">Guías</a></li>
+                        <li><a href="faq.html">Aplicaciones</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Promoción de Salud. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
