@@ -125,7 +125,7 @@ if (contactForm) {
             contactMessage.textContent = "Error al enviar el mensaje. Por favor, intenta nuevamente.";
             contactMessage.style.color = "#f44336";
             console.error('Error:', error);
-        });
+    });
     });
 }
 
